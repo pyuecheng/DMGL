@@ -7,4 +7,4 @@ numpy==1.21.2,
 pandas==1.0.1,
 scipy==1.6.1;
 
-we provide the core code and will update a more detailed version after some weeks.
+we provide the core code and will update a more detailed version recently.
