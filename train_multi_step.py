@@ -6,7 +6,7 @@ from tensorboardX import SummaryWriter
 from util import *
 from trainer import Trainer
 
-from model.esg import ESG
+from model.DMGL import DMGL
 import sys,os
 from evaluate import get_scores
 
