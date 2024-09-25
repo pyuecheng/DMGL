@@ -96,7 +96,7 @@ def main(runid):
     node_fea = get_node_fea(args.data, 0.7)
     node_fea = torch.tensor(node_fea).type(torch.FloatTensor).to(args.device)
     # print(node_fea.shape)
-    model = ESG(args.dy_embedding_dim, args.dy_interval, args.num_nodes, args.seq_in_len, args.seq_out_len, args.in_dim, args.out_dim, 1, args.layers,
+    model = DMGL(args.dy_embedding_dim, args.dy_interval, args.num_nodes, args.seq_in_len, args.seq_out_len, args.in_dim, args.out_dim, 1, args.layers,
                   conv_channels=args.conv_channels, residual_channels=args.residual_channels,
                   skip_channels=args.skip_channels, end_channels= args.end_channels, kernel_set=args.kernel_set,
                   dilation_exp=args.dilation_exponential, gcn_depth=args.gcn_depth,
